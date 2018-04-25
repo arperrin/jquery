@@ -147,8 +147,8 @@
 	<distributionManagement>
     <repository>
       <id>nexus</id>
-      <name>jqueryui</name>
-      <url>http://192.168.33.10:8082/nexus/content/repositories/jqueryui/</url>
+      <name>jquery</name>
+      <url>http://192.168.33.10:8082/nexus/content/repositories/jquery/</url>
     </repository>
   </distributionManagement>
 
