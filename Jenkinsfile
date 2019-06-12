@@ -12,11 +12,15 @@ pipeline {
             }
         }
         stage('Publish To Nexus') {
-            nexusPublisher 
-                nexusInstanceId: 'Nexus', 
-                nexusRepositoryId: 'jquery', 
-                packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: 'jar', filePath: 'target']], 
-                mavenCoordinate: [artifactId: 'jquery', groupId: 'aperrin', packaging: 'jar', version: '3.3.1-2-SNAPSHOT']]]
+            steps{
+                script{
+                    nexusPublisher 
+                        nexusInstanceId: 'Nexus', 
+                        nexusRepositoryId: 'jquery', 
+                        packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: 'jar', filePath: 'target']], 
+                        mavenCoordinate: [artifactId: 'jquery', groupId: 'aperrin', packaging: 'jar', version: '3.3.1-2-SNAPSHOT']]]
+                }
+            }
         }
     }
 }
