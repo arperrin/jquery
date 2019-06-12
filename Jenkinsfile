@@ -15,7 +15,7 @@ pipeline {
             steps {
                 nexusPublisher nexusInstanceId: 'Nexus', 
                     nexusRepositoryId: 'jquery', 
-                    packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: 'jar', filePath: 'target']], 
+                    packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: 'jar', filePath: 'target/jquery.jar']], 
                     mavenCoordinate: [artifactId: 'jquery', groupId: 'aperrin', packaging: 'jar', version: '3.3.1-2-SNAPSHOT']]]
             }
         }
