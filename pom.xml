@@ -144,12 +144,12 @@
         </resources>
     </build>
 
-	<distributionManagement>
+	<!-- <distributionManagement>
     <repository>
       <id>nexus</id>
       <name>jquery</name>
-      <url>http://192.168.33.10:8081/nexus/content/repositories/jquery/</url>
+      <url>http://192.168.33.10:8081/repository/jquery/</url>
     </repository>
-  </distributionManagement>
+  </distributionManagement> -->
 
 </project>
