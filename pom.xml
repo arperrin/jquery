@@ -9,7 +9,7 @@
     <!-- </parent> -->
 
     <packaging>jar</packaging>
-    <groupId>aperrin</groupId>
+    <groupId>perrin</groupId>
     <artifactId>jquery</artifactId>
     <version>3.3.1-2-SNAPSHOT</version>
     <name>jquery</name>
