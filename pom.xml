@@ -8,6 +8,12 @@
         <!-- <version>7</version> -->
     <!-- </parent> -->
 
+    <!-- <parent>
+        <groupId>perrin</groupId>
+        <artifactId>maven-parent</artifactId>
+        <version>1.0</version>
+    </parent> -->
+
     <packaging>jar</packaging>
     <groupId>perrin</groupId>
     <artifactId>jquery</artifactId>
@@ -148,7 +154,7 @@
         <snapshotRepository>
             <id>nexus</id>
             <name>perrin-maven-snapshots</name>
-            <url>http://192.168.33.10:8081/repository/perrin-maven-snapshots/</url>
+            <url>${env.NEXUS_URL}/repository/perrin-maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
