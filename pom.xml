@@ -2,18 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- <parent> -->
-        <!-- <groupId>org.sonatype.oss</groupId> -->
-        <!-- <artifactId>oss-parent</artifactId> -->
-        <!-- <version>7</version> -->
-    <!-- </parent> -->
-
-    <!-- <parent>
-        <groupId>perrin</groupId>
-        <artifactId>maven-parent</artifactId>
-        <version>1.0</version>
-    </parent> -->
-
     <packaging>jar</packaging>
     <groupId>perrin</groupId>
     <artifactId>jquery</artifactId>
@@ -154,7 +142,7 @@
         <snapshotRepository>
             <id>nexus</id>
             <name>perrin-maven-snapshots</name>
-            <url>${env.NEXUS_URL}/repository/perrin-maven-snapshots/</url>
+            <url>http://192.168.10.33:8081/repository/perrin-maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
